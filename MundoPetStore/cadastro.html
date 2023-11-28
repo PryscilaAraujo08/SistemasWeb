@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <style>
+        /* Reset de Estilos */
+        body, h2, form, label, input, select, button {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightseagreen;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        select {
+            appearance: none; /* Remove o estilo padrão da caixa de seleção */
+        }
+
+        button {
+            background-color: darkcyan;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: darkslategray;
+        }
+
+        /* Estilo Responsivo */
+        @media (max-width: 600px) {
+            form {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Criar Conta</h2>
+
+        <!-- Campo de Nome -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Campo de E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Campo de Senha -->
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Campo de Nome do Animal -->
+        <label for="petName">Nome do Pet:</label>
+        <input type="text" id="petName" name="petName" required>
+
+        <!-- Campo de Tipo de Animal -->
+        <label for="petType">Tipo de Pet:</label>
+        <select id="petType" name="petType" required>
+            <option value="selecione">Selecione</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+        </select>
+
+        <!-- Checkbox para Saúde do Animal -->
+        <label>
+            <input type="checkbox" name="healthy">
+            Está em boa saúde?
+        </label>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Cadastrar</button>
+    </form>
+
+</body>
+</html>

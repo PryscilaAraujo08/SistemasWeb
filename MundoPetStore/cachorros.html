@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos para Cães</title>
+    <!-- Link para a biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Reset de estilos e estilos gerais do body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: darkturquoise;
+            padding: 20px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Estilos do logo no cabeçalho */
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos do formulário de pesquisa no cabeçalho */
+        header form {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            margin-left: 20px;
+            max-width: 800px;
+        }
+
+        /* Estilos do campo de pesquisa no cabeçalho */
+        header input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        /* Estilos do botão de pesquisa no cabeçalho */
+        header button {
+            background-color: deeppink;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        /* Estilos dos ícones no cabeçalho */
+        header .icons {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Estilos dos ícones individuais no cabeçalho */
+        header .icon {
+            margin-left: 20px;
+            font-size: 24px;
+            color:white;
+            cursor: pointer;
+        }
+
+        /* Estilos dos links de navegação */
+        nav {
+            display: flex;
+            background-color:paleturquoise;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color:deeppink;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color:lightpink;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: mediumorchid;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos gerais das seções */
+        section {
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Estilos dos títulos das seções */
+        h2 {
+            margin-bottom: 10px;
+            color:darkcyan;
+        }
+
+        /* Estilos dos produtos */
+        .product {
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* Estilos das imagens dos produtos */
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos do botão "Adicionar ao Carrinho" */
+        .add-to-cart {
+            background-color:lightseagreen;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="images/MundoPetStore.png" alt="Logo da Loja">
+        <form action="#" method="get">
+            <input type="text" placeholder="Pesquisar produtos">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="icons">
+            <div class="icon">
+                <a href="login.html">
+                    <i class="far fa-user"></i>
+                </a>
+            </div>
+            <div class="icon"><i class="far fa-heart"></i></div>
+            <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+    </header>
+
+    <!-- Imagem promocional -->
+    <img src="images/cores.jpg" alt="Sua Imagem" style="width: 100%; max-height: 100px; margin-top: 0px;">
+
+    <!-- Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="cachorros.html">Cães</a>
+        <a href="gatos.html">Gatos</a>
+        <a href="higiene.html">Higiene e Beleza</a>
+        <a href="formulario.html">Agendamentos</a>
+    </nav>
+
+    <!-- Seção de Produtos para Cães -->
+    <section>
+        <h2>Ração Seca para Cães</h2>
+
+        <!-- Produto 1 -->
+        <div class="product">
+            <img src="images/seca.cachorro.jpg" alt="Ração Seca 1">
+            <p>Valor: R$ 50,00</p>
+            <p>Descrição: Ração seca de alta qualidade para cães.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product">
+            <img src="images/seca2.jpg" alt="Ração Seca 2">
+            <p>Valor: R$ 45,00</p>
+            <p>Descrição: Ração seca nutritiva para cães castrados.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <!-- Seção de Ração Úmida para Cães -->
+    <section>
+        <h2>Ração Úmida para Cães</h2>
+
+        <!-- Produto 1 -->
+        <div class="product">
+            <img src="images/umida_cachorro.webp" alt="Ração Úmida 1">
+            <p>Valor: R$ 8,00</p>
+            <p>Descrição: Deliciosa ração úmida para cães exigentes.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product">
+            <img src="images/umida2.webp" alt="Ração Úmida 2">
+            <p>Valor: R$ 10,00</p>
+            <p>Descrição: Ração úmida com pedaços de carne para cães.</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Entre em contato: pryscilaa08@outlook.com | Telefone: (31) 999999999</p>
+    </footer>
+
+</body>
+</html>
